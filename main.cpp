@@ -21,7 +21,7 @@ ALLEGRO_TIMER *timer = NULL, *counter = 0;
 ALLEGRO_FONT *font = NULL;
 
 //variables that represent the objects that will be drawn on the screen
-ALLEGRO_BITMAP *SPIDER=0,*BIN =0,*DIRT=0,*TABLE=0, *CLEANER = 0,*BACKGROUND = 0;
+ALLEGRO_BITMAP *SPIDER=0,*BIN =0,*DIRT=0,*TABLE=0, *CLEANER = 0,*BACKGROUND = 0, *ground =  0;
 
 //variable that represents the score
 int SCORE=0;
@@ -270,13 +270,13 @@ void draw_lines(int number_tables)
         al_draw_bitmap(TABLE,table_temp_x,table_temp_y,0);
             for(int y=0;y<HEIGHT;y+=80)
             {
-                al_draw_line(0,y,WIDTH,y,al_map_rgb(0,0,255),2.0);
+                al_draw_line(0,y,WIDTH,y,al_map_rgb(255,255,255),2.0);
 
             }
 
             for(int x=0;x<WIDTH;x+=80)
             {
-                al_draw_line(x,0,x,HEIGHT,al_map_rgb(0,0,255),2.0);
+                al_draw_line(x,0,x,HEIGHT,al_map_rgb(255,255,255),2.0);
 
             }
     }
@@ -456,6 +456,7 @@ int main()
     DIRT = al_load_bitmap("DIRT.png");
     CLEANER = al_load_bitmap("CLEANER.png");
     BACKGROUND = al_load_bitmap("BACKGROUND.png");
+    ground = al_load_bitmap("texture.png");
 
     al_start_timer(timer);
     al_start_timer(counter);
@@ -481,7 +482,7 @@ int main()
     {
         moving_tables();
 
-        al_clear_to_color(al_map_rgb(255,255,255));
+        al_draw_bitmap(ground,0,0,0);
 
         //drawing guidelines
         draw_lines(3);
