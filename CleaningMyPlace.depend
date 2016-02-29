@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1456502907 source:c:\codeblocks\mingw\isso_e_so_um_teste\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<stdio.h>
+	<stdbool.h>
+	<string>
+
+1456634332 source:c:\users\rogerio\desktop\allegro_projetos\cleaningmyplace-2016-02-27\cleaningmyplace\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<stdio.h>
+	<stdbool.h>
+	<string>
+
+1456657134 source:c:\users\rogerio\desktop\allegro_projetos\cleaningmyplace\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<stdio.h>
+	<stdbool.h>
+	<string>
+
